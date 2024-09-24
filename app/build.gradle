@@ -55,6 +55,9 @@ dependencies {
     implementation libs.material
     implementation libs.androidx.lifecycle.runtime.ktx
 
+    ext.hilt_version = "2.51.1"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+
     // Project module dependency
     implementation libs.androidx.constraintlayout
     implementation libs.androidx.navigation.fragment.ktx

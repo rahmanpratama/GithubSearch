@@ -3,20 +3,21 @@ package io.github.rahman.githubsearch.ui
 import android.widget.SearchView
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import io.github.rahman.githubsearch.R
 import io.github.rahman.githubsearch.base.BaseFragment
 import io.github.rahman.githubsearch.base.viewBinding
+import io.github.rahman.githubsearch.client.dto.GitHubUser
 import io.github.rahman.githubsearch.container.Container
 import io.github.rahman.githubsearch.databinding.SearchFragmentBinding
 import io.github.rahman.githubsearch.helper.EventObserver
 import io.github.rahman.githubsearch.helper.SearchViewModelFactory
 import io.github.rahman.githubsearch.ui.adapter.ProfileListAdapter
-
 class SearchFragment : BaseFragment(R.layout.search_fragment) {
 
     private val binding by viewBinding(SearchFragmentBinding::bind)
     private val profileListAdapter: ProfileListAdapter by lazy { ProfileListAdapter(requireContext()) }
-
+    private val DlgDetail: DlgDetail by lazy { DlgDetail(requireContext()) }
 
     private val viewModel by viewModels<SearchViewModel> {
         SearchViewModelFactory(Container.serviceContainer.scannerService)
@@ -33,6 +34,13 @@ class SearchFragment : BaseFragment(R.layout.search_fragment) {
 
     override fun initEventListener() {
         super.initEventListener()
+
+        profileListAdapter.setOnItemClickListener(object : ProfileListAdapter.OnItemClickListener {
+            override fun onItemClick(data: GitHubUser) {
+                DlgDetail.show(data = data)
+            }
+        })
+
         binding.searchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let {

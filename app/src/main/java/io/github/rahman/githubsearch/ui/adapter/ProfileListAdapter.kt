@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import io.github.rahman.githubsearch.R
@@ -16,6 +17,12 @@ import io.github.rahman.githubsearch.ui.viewdata.ProfileViewdata
 internal class ProfileListAdapter(private val context: Context): RecyclerView.Adapter<ProfileListAdapter.ProfileListViewHolder>() {
 
     private val datas = ArrayList<GitHubUser>()
+
+    interface OnItemClickListener {
+        fun onItemClick(data: GitHubUser)
+    }
+
+    private var onItemClickListener: OnItemClickListener? = null
 
     inner class ProfileListViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val binding = ProfileItemBinding.bind(view)
@@ -36,6 +43,13 @@ internal class ProfileListAdapter(private val context: Context): RecyclerView.Ad
             .load(data.avatar_url)
             .into(holder.binding.profileImage)
 
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.onItemClick(data = data)
+        }
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.onItemClickListener = listener
     }
 
     override fun getItemCount(): Int = datas.size
