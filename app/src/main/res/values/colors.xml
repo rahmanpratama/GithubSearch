@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    Design System Colors-->
+    <!--    color design system-->
+    <!--    primaryGray-->
+    <color name="gray_50">#FFFFFF</color>
+    <color name="gray_100">#FAFAFA</color>
+    <color name="gray_200">#F2F2F2</color>
+    <color name="gray_300">#E5E5E5</color>
+    <color name="gray_400">#C0C0C0</color>
+    <color name="gray_500">#87888D</color>
+    <color name="gray_600">#6C6C6C</color>
+    <color name="gray_700">#444444</color>
+    <color name="gray_800">#252525</color>
+
+    <!--    primaryBlue-->
+    <color name="blue_50">#ECF0FD</color>
+    <color name="blue_100">#CFDBF8</color>
+    <color name="blue_200">#87A5EE</color>
+    <color name="blue_300">#6087E8</color>
+    <color name="blue_400">#3869E3</color>
+    <color name="blue_500">#104BDD</color>
+    <color name="blue_600">#0D3EB8</color>
+    <color name="blue_700">#0B3293</color>
+
+    <!--    primaryYellow-->
+    <color name="yellow_50">#FEFDEE</color>
+    <color name="yellow_100">#FBFADC</color>
+    <color name="yellow_200">#F6F2A6</color>
+    <color name="yellow_300">#F3EE89</color>
+    <color name="yellow_400">#F0E96B</color>
+    <color name="yellow_500">#EDE54E</color>
+    <color name="yellow_600">#DBD559</color>
+    <color name="yellow_700">#C9C244</color>
+
+    <!--    secondaryTosca-->
+    <color name="tosca_50">#E6FCFA</color>
+    <color name="tosca_100">#CCF8F4</color>
+    <color name="tosca_200">#80EEE3</color>
+    <color name="tosca_300">#55E8DA</color>
+    <color name="tosca_400">#2AE3D0</color>
+    <color name="tosca_500">#00DDC7</color>
+    <color name="tosca_600">#00B8A6</color>
+    <color name="tosca_700">#009385</color>
+
+    <!--    secondaryRedBrand-->
+    <color name="red_brand_50">#FDEFEE</color>
+    <color name="red_brand_100">#FBDDDC</color>
+    <color name="red_brand_200">#F5ABA7</color>
+    <color name="red_brand_300">#F28F8A</color>
+    <color name="red_brand_400">#EE736D</color>
+    <color name="red_brand_500">#EB5750</color>
+    <color name="red_brand_600">#C44843</color>
+    <color name="red_brand_700">#9D3A35</color>
+
+    <!--    secondaryPink-->
+    <color name="pink_50">#FDEAF4</color>
+    <color name="pink_100">#FAD4E9</color>
+    <color name="pink_200">#F394C8</color>
+    <color name="pink_300">#EF70B6</color>
+    <color name="pink_400">#EB4DA3</color>
+    <color name="pink_500">#E72991</color>
+    <color name="pink_600">#C02279</color>
+    <color name="pink_700">#9A1B61</color>
+
+    <!--    secondaryPurple-->
+    <color name="purple_50">#F4EAFF</color>
+    <color name="purple_100">#E8D4FF</color>
+    <color name="purple_200">#C494FF</color>
+    <color name="purple_300">#B171FF</color>
+    <color name="purple_400">#9D4DFF</color>
+    <color name="purple_500">#8A2AFF</color>
+    <color name="purple_600">#7323D4</color>
+    <color name="purple_700">#5C1CAA</color>
+
+    <!--    secondaryOrangeBrand-->
+    <color name="orange_brand_50">#FFF5EA</color>
+    <color name="orange_brand_100">#FFE7CC</color>
+    <color name="orange_brand_200">#FFC280</color>
+    <color name="orange_brand_300">#FFAE55</color>
+    <color name="orange_brand_400">#FF992A</color>
+    <color name="orange_brand_500">#FF8500</color>
+    <color name="orange_brand_600">#D46F00</color>
+    <color name="orange_brand_700">#AA5900</color>
+
+    <!--    statusRedDanger-->
+    <color name="red_50">#FDEAEB</color>
+    <color name="red_100">#FAD4D6</color>
+    <color name="red_200">#F29499</color>
+    <color name="red_300">#EE7178</color>
+    <color name="red_400">#ED646A</color>
+    <color name="red_500">#E52A34</color>
+    <color name="red_600">#CF212A</color>
+    <color name="red_700">#A1131A</color>
+
+    <!--    statusOrangeWarning-->
+    <color name="orange_50">#FFF3EC</color>
+    <color name="orange_100">#FEE6D7</color>
+    <color name="orange_200">#FDC19B</color>
+    <color name="orange_300">#FDAC7A</color>
+    <color name="orange_400">#FF9A5C</color>
+    <color name="orange_500">#FC8338</color>
+    <color name="orange_600">#D26D2F</color>
+    <color name="orange_700">#B85518</color>
+
+    <!--    statusGreenSuccess-->
+    <color name="green_50">#E6F8F4</color>
+    <color name="green_100">#CCF1E8</color>
+    <color name="green_200">#80DBC5</color>
+    <color name="green_300">#56D0B2</color>
+    <color name="green_400">#2BC49F</color>
+    <color name="green_500">#01B88C</color>
+    <color name="green_600">#019975</color>
+    <color name="green_700">#017B5D</color>
+
+    <!--    statusCyanInfo-->
+    <color name="cyan_50">#E6F6FF</color>
+    <color name="cyan_100">#CCECFF</color>
+    <color name="cyan_200">#80CFFE</color>
+    <color name="cyan_300">#55BFFE</color>
+    <color name="cyan_400">#2AAFFE</color>
+    <color name="cyan_500">#009FFE</color>
+    <color name="cyan_600">#0084D4</color>
+    <color name="cyan_5700">#006AA9</color>
+
+</resources>
