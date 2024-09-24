@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <SearchView
@@ -12,7 +13,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="32dp"
-        android:background="@color/gray_300"
+        android:background="@color/gray_500"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/profile_list"
@@ -22,5 +23,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        tools:listitem="@layout/profile_item"
+        tools:itemCount="10"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

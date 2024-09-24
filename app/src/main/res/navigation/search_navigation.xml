@@ -2,10 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/search_navigation"
-    app:startDestination="@id/searchFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/searchFragment"
         android:name="io.github.rahman.githubsearch.ui.SearchFragment"
         android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="io.github.rahman.githubsearch.ui.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
 </navigation>
